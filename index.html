@@ -4,72 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mein Portfolio</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f0f4f8;
-      color: #333;
-    }
-    header {
-      background-color: #1e3a8a;
-      color: white;
-      padding: 2rem;
-      text-align: center;
-    }
-    nav {
-      background-color: #3b82f6;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-    }
-    footer {
-      background-color: #1e3a8a;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
 </head>
 <body>
   <header>
     <h1>Willkommen</h1>
     <p>Ein Einblick in meine Arbeit, Persönlichkeit und Ziele</p>
   </header>
-  
+
   <nav>
     <a href="#about">Über mich</a>
-    <a href="#projects">Meine Projekte</a>
+    <a href="#projects">Projekte</a>
     <a href="#skills">Lebenslauf & Skills</a>
-    <a href="#goals">Meine Ziele</a>
-    <a href="#contact">Contact me</a>
+    <a href="#goals">Ziele</a>
+    <a href="#contact">Kontakt</a>
   </nav>
 
   <section id="about">
     <h2>Über mich</h2>
+    <img src="images/profilbild.jpg" alt="Profilbild" style="width:150px;border-radius:50%;">
     <p>Hier kommt deine Biografie hin.</p>
   </section>
 
   <section id="projects">
     <h2>Projekte</h2>
-    <p>Hier präsentierst du deine bisherigen Arbeiten mit Bildern, Videos oder Texten.</p>
+    <div class="project">
+      <img src="images/projekt1.jpg" alt="Projekt 1" style="width:100%;max-width:300px;">
+      <p>Beschreibung deines ersten Projekts.</p>
+    </div>
   </section>
 
   <section id="skills">
     <h2>Lebenslauf & Skills</h2>
-    <p>Dein Werdegang und deine Fähigkeiten.</p>
+    <ul>
+      <li>HTML, CSS, JavaScript</li>
+      <li>Teamarbeit & Kommunikation</li>
+      <li>Kreatives Denken</li>
+    </ul>
   </section>
 
   <section id="goals">
@@ -79,8 +51,8 @@
 
   <section id="contact">
     <h2>Kontakt</h2>
-    <p>E-Mail: deine@mailadresse.de</p>
-    <p>Social Media Links hier einfügen.</p>
+    <p>E-Mail: <a href="mailto:deine@mailadresse.de">deine@mailadresse.de</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/deinprofil</a></p>
   </section>
 
   <footer>
@@ -88,3 +60,4 @@
   </footer>
 </body>
 </html>
+
